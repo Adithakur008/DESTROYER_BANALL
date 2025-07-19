@@ -16,6 +16,4 @@ https://github.com/Adithakur008/DESTROYER_BANALL
         sync: false
       - key: OWNER_ID 
         sync: 7557718680
-      - key: MONGO_URL
-        sync: false    
     autoDeploy: false
