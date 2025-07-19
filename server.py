@@ -7,7 +7,7 @@ api = Api(app)
 
 class Greeting (Resource):
     def get(self):
-        return "Faded string bot is Up & Running!"
+        return "Faded Ban All Bot is Up & Running!"
 
 api.add_resource(Greeting, '/')
 app.run(host="0.0.0.0", port=os.environ.get("PORT", 800))
