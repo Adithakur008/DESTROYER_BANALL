@@ -1,9 +1,9 @@
 - type: web
     plan: free
-    name: FADEDSTRING
+    name: RAUSHAN
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 server.py & python3 -m 
+    startCommand: python3 server.py & python3 -m RAUSHAN
  repo:
 https://github.com/Adithakur008/DESTROYER_BANALL
     branch: master
