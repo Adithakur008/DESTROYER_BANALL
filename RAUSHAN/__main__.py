@@ -31,13 +31,13 @@ filters.command("start")
 )
 async def start_command(client, message: Message):
   await message.reply_photo(
-                            photo = f"https://telegra.ph/file/2b166c1622252b04d36fc.jpg",
-                            caption = f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙʀᴀʀʏ ᴛᴏ ʙᴀɴ ᴏʀ ᴅᴇsᴛʀᴏʏ ᴀʟʟ ᴛʜᴇ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ɪɴ ᴀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴀɴᴅ ғᴇᴇʟ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ @ll_destroyerr_ll!\n\nᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴀʙɪʟɪᴛʏ ɢɪᴠᴇ ᴍᴇ ғᴜʟʟ ᴘᴏᴡᴇʀs\n\nᴛʏᴘᴇ /ʙᴀɴᴀʟʟ ᴛᴏ ꜱᴇᴇ ᴍᴀɢɪᴄ ɪɴ ɢʀᴏᴜᴘ.",
+                            photo = f"https://files.catbox.moe/id5nqm.jpg",
+                            caption = f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ | ғᴀᴅᴇᴅ🕊ʙᴀɴᴀʟʟ🕊ʙᴏᴛ | ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙʀᴀʀʏ ᴛᴏ ʙᴀɴ ᴏʀ ᴅᴇsᴛʀᴏʏ ᴀʟʟ ᴛʜᴇ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ɪɴ ᴀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴀɴᴅ ᴍᴀᴋᴇ ᴛʜᴇᴍ ғᴇᴇʟ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ @CRY4DED_FR 🐉!\n\nᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴀʙɪʟɪᴛʏ ɢɪᴠᴇ ᴍᴇ ғᴜʟʟ ᴘᴏᴡᴇʀs\n\nᴛʏᴘᴇ /ʙᴀɴᴀʟʟ ᴛᴏ ꜱᴇᴇ ᴍᴀɢɪᴄ ɪɴ ɢʀᴏᴜᴘ 🌚.",
   reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🫧owner🍁", url=f"https://t.me/ll_destroyerr_ll")
+                        "⚡owner🕊", url=f"https://t.me/CRY4DED_FR")
                 ]       
            ]
       )
