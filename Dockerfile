@@ -1,24 +1,28 @@
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
+ # Use official Python runtime
+FROM python:3.11-slim
 
-# Install system dependencies
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies (for cryptography, psutil, etc.)
 RUN apt-get update && apt-get install -y \
-    git \
-    curl \
-    libopencv-dev \
-    libfreetype6-dev \
-    libpng-dev \
+    gcc \
+    libffi-dev \
+    libssl-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Verify Python and pip versions
-RUN python3 --version && pip3 --version
+# Copy requirements first (for better caching)
+COPY requirements.txt .
 
-# Check network connectivity with curl
-RUN curl -sSL https://pypi.org
+# Upgrade pip and install dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt --verbose
 
-# Install Python dependencies with verbose output
-RUN pip3 install --no-cache-dir -U -r requirements.txt --verbose
-
+# Copy app code
 COPY . .
-CMD ["bash","start.sh"]
+
+# Expose port (Render uses $PORT)
+EXPOSE $PORT
+
+# Run the app
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:8080"]
